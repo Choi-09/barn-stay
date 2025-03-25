@@ -3,7 +3,7 @@ import HomeView from '@/views/HomeView.vue';
 import SecondFloorView from '@/views/SecondFloorView.vue';
 import FirstFloorView from '@/views/FirstFloorView.vue';
 import ThirdFloorView from '@/views/ThirdFloorView.vue';
-import ExhibitionView from '@/views/ExhibitionView.vue';
+import GalleryView from '@/views/GalleryView.vue';
 
 const router = createRouter({
   history: createWebHistory(),
@@ -29,9 +29,9 @@ const router = createRouter({
       component: ThirdFloorView
     },
     {
-      path: '/floors/exhibition',
-      name: 'exhibition',
-      component: ExhibitionView
+      path: '/floors/gallery',
+      name: 'gallery',
+      component: GalleryView
     },
     {
       path: '/:pathMatch(.*)*',

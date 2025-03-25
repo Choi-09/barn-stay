@@ -1,0 +1,86 @@
+$breakpoints: (
+  // 기본 반응형
+        'sm': 576px,
+        'md': 768px,
+        'lg': 992px,
+        'xl': 1200px,
+
+  // 표준 해상도
+        'hd': 1280px,    // HD (1280 x 720)
+        'fhd': 1920px,   // Full HD (1920 x 1080)
+        '2k': 2048px,    // 2K (2048 x 1080)
+        'qhd': 2560px,   // QHD (2560 x 1440)
+        'uhd': 3840px,   // 4K UHD (3840 x 2160)
+
+  // 애플 디바이스
+        'iphone-se-2': 375px,         // iPhone SE 2nd gen
+        'iphone-se-3': 375px,         // iPhone SE 3rd gen
+        'iphone-13-mini': 375px,      // iPhone 13 Mini
+        'iphone-14': 390px,           // iPhone 14
+        'iphone-14-pro': 393px,       // iPhone 14 Pro
+        'iphone-14-plus': 428px,      // iPhone 14 Plus
+        'iphone-14-pro-max': 430px,   // iPhone 14 Pro Max
+        'iphone-15': 393px,           // iPhone 15
+        'iphone-15-plus': 430px,      // iPhone 15 Plus
+        'iphone-15-pro': 393px,       // iPhone 15 Pro
+        'iphone-15-pro-max': 430px,   // iPhone 15 Pro Max
+        'iphone-16': 393px,           // iPhone 16 (예상)
+        'iphone-16-plus': 430px,      // iPhone 16 Plus (예상)
+        'iphone-16-pro': 393px,       // iPhone 16 Pro (예상)
+        'iphone-16-pro-max': 430px,   // iPhone 16 Pro Max (예상)
+
+        'ipad-9': 810px,              // iPad 9th gen
+        'ipad-10': 820px,             // iPad 10th gen
+        'ipad-11': 820px,             // iPad 11th gen (예상)
+        'ipad-air-4': 820px,          // iPad Air 4th gen
+        'ipad-air-5': 820px,          // iPad Air 5th gen
+        'ipad-air-6': 820px,          // iPad Air 6th gen (예상)
+        'ipad-mini-6': 744px,         // iPad Mini 6th gen
+        'ipad-mini-7': 744px,         // iPad Mini 7th gen (예상)
+        'ipad-pro-11-3': 834px,       // iPad Pro 11" 3rd gen
+        'ipad-pro-11-4': 834px,       // iPad Pro 11" 4th gen
+        'ipad-pro-11-5': 834px,       // iPad Pro 11" 5th gen (예상)
+        'ipad-pro-12-9-5': 1024px,    // iPad Pro 12.9" 5th gen
+        'ipad-pro-12-9-6': 1024px,    // iPad Pro 12.9" 6th gen
+        'ipad-pro-12-9-7': 1024px,    // iPad Pro 12.9" 7th gen (예상)
+
+        'macbook-air-13': 1280px,     // MacBook Air 13" (M1/M2)
+        'macbook-air-15': 1440px,     // MacBook Air 15" (M2)
+        'macbook-air-next': 1440px,   // MacBook Air Next Gen (예상)
+        'macbook-pro-14-m1': 1512px,  // MacBook Pro 14" (M1 Pro/Max)
+        'macbook-pro-14-m2': 1512px,  // MacBook Pro 14" (M2 Pro/Max)
+        'macbook-pro-14-m3': 1512px,  // MacBook Pro 14" (M3 Pro/Max)
+        'macbook-pro-16-m1': 1728px,  // MacBook Pro 16" (M1 Pro/Max)
+        'macbook-pro-16-m2': 1728px,  // MacBook Pro 16" (M2 Pro/Max)
+        'macbook-pro-16-m3': 1728px,  // MacBook Pro 16" (M3 Pro/Max)
+
+  // 삼성 디바이스
+        'galaxy-s22': 360px,          // Galaxy S22
+        'galaxy-s22-plus': 390px,     // Galaxy S22+
+        'galaxy-s22-ultra': 412px,    // Galaxy S22 Ultra
+        'galaxy-s23': 360px,          // Galaxy S23
+        'galaxy-s23-plus': 390px,     // Galaxy S23+
+        'galaxy-s23-ultra': 412px,    // Galaxy S23 Ultra
+        'galaxy-s23-fe': 360px,       // Galaxy S23 FE
+        'galaxy-s24': 360px,          // Galaxy S24
+        'galaxy-s24-plus': 390px,     // Galaxy S24+
+        'galaxy-s24-ultra': 412px,    // Galaxy S24 Ultra
+        'galaxy-s25': 360px,          // Galaxy S25 (예상)
+        'galaxy-s25-plus': 390px,     // Galaxy S25+ (예상)
+        'galaxy-s25-ultra': 412px,    // Galaxy S25 Ultra (예상)
+
+        'galaxy-z-fold4': 904px,      // Galaxy Z Fold4 (펼쳤을 때)
+        'galaxy-z-fold5': 904px,      // Galaxy Z Fold5 (펼쳤을 때)
+        'galaxy-z-flip4': 360px,      // Galaxy Z Flip4 (펼쳤을 때)
+        'galaxy-z-flip5': 360px,      // Galaxy Z Flip5 (펼쳤을 때)
+
+        'galaxy-tab-s8': 1600px,      // Galaxy Tab S8
+        'galaxy-tab-s8-plus': 1752px, // Galaxy Tab S8+
+        'galaxy-tab-s8-ultra': 1848px,// Galaxy Tab S8 Ultra
+        'galaxy-tab-s9': 1600px,      // Galaxy Tab S9
+        'galaxy-tab-s9-plus': 1752px, // Galaxy Tab S9+
+        'galaxy-tab-s9-ultra': 1848px,// Galaxy Tab S9 Ultra
+        'galaxy-tab-s10': 1600px,     // Galaxy Tab S10 (예상)
+        'galaxy-tab-s10-plus': 1752px,// Galaxy Tab S10+ (예상)
+        'galaxy-tab-s10-ultra': 1848px// Galaxy Tab S10 Ultra (예상)
+);

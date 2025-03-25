@@ -1,0 +1,192 @@
+@use 'sass:map';
+@use 'sass:meta';
+@use '../abstracts/variables' as *;
+
+// 반응형 믹스인
+@mixin respond-to($breakpoint) {
+  @media (min-width: map.get($breakpoints, $breakpoint)) {
+    @content;
+  }
+}
+
+// Flex 믹스인
+@mixin flex($direction: row, $justify: flex-start, $align: stretch, $gap: 0) {
+  display: flex;
+  flex-direction: $direction;
+  justify-content: $justify;
+  align-items: $align;
+  gap: if(meta.type-of($gap) == 'number', map.get($spacers, $gap), $gap);
+}
+
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@mixin flex-evenly {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+// 컴포넌트 기본 스타일
+@mixin button-base {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: map.get($spacers, 2) map.get($spacers, 3);
+  border-radius: $border-radius-sm;
+  font-weight: $font-weight-medium;
+  transition: $transition-base;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  margin: map.get($spacers, 2);
+
+  &:hover {
+    opacity: 0.9;
+  }
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+
+  @content;
+}
+
+@mixin input-base {
+  width: 100%;
+  padding: map.get($spacers, 2);
+  border: 1px solid $border-color;
+  border-radius: $border-radius-sm;
+  font-size: $font-size-base;
+  transition: $transition-base;
+
+  &:focus {
+    border-color: $primary-nv;
+    outline: none;
+  }
+
+  @content;
+}
+
+@mixin card-base {
+  background-color: white;
+  box-shadow: $shadow-sm;
+  margin-bottom: map.get($spacers, 4);
+  overflow: hidden;
+
+  h3 {
+    font-size: $font-size-lg;
+    font-weight: $font-weight-medium;
+    color: $text-primary;
+    margin-bottom: map.get($spacers, 3);
+  }
+}
+
+@mixin progress-bar-base {
+  & {
+    height: 4px;
+    background-color: $background-light;
+    border-radius: $border-radius-sm;
+    overflow: hidden;
+  }
+
+  .progress-value {
+    & {
+      height: 100%;
+      background-color: $primary-nv;
+      border-radius: $border-radius-sm;
+      transition: $transition-slow;
+    }
+
+    &.warning {
+      background-color: $warning;
+    }
+
+    &.danger {
+      background-color: $danger;
+    }
+  }
+}
+
+@mixin table-base {
+  & {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  th {
+    background-color: $background-light;
+    padding: map.get($spacers, 2);
+    font-weight: $font-weight-medium;
+    text-align: center;
+    vertical-align: middle;
+    color: $text-secondary;
+  }
+
+  tr {
+    &.inactive {
+      color: $text-muted;
+    }
+  }
+
+  td {
+    padding: map.get($spacers, 2);
+    border-bottom: 1px solid $border-color;
+    text-align: center;
+    vertical-align: middle;
+  }
+}
+
+// 대시보드 섹션 공통 스타일
+@mixin dashboard-section {
+  & {
+    margin-bottom: map.get($spacers, 4);
+  }
+}
+
+// 그리드 컨테이너 공통 스타일
+@mixin grid-container {
+  & {
+    display: grid;
+    gap: map.get($spacers, 4);
+    align-items: start;
+  }
+
+  @include respond-to('lg') {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+// 반응형 컨테이너
+@mixin responsive-container {
+  & {
+    max-width: 100%;
+    overflow-x: auto;
+  }
+
+  @include respond-to('sm') {
+    max-width: 90%;
+  }
+
+  @include respond-to('md') {
+    max-width: 900px;
+  }
+
+  @include respond-to('lg') {
+    max-width: 1100px;
+  }
+
+  @include respond-to('xl') {
+    max-width: 1200px;
+  }
+}

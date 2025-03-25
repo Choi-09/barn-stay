@@ -20,8 +20,8 @@ const route = useRoute();
 const currentPath = computed(() => route.path);
 
 const floors = [
-  { name: '2층', path: '/floors/second' },
   { name: '1층', path: '/floors/first' },
+  { name: '2층', path: '/floors/second' },
   { name: '3층', path: '/floors/third' },
   { name: '전시실', path: '/floors/exhibition' }
 ];

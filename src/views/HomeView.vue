@@ -17,68 +17,8 @@
 import QRGenerator from '../components/QRGenerator.vue';
 
 // QR 코드가 가리킬 URL (2층 객실 페이지)
-const qrUrl = 'https://barn-stay.netlify.app/floors/second'; // 실제 도메인으로 변경 필요
-const airbnbUrl = 'https://www.airbnb.com/h/barnstay-suite'; // 실제 Airbnb URL로 변경 필요
+const qrUrl = 'https://barn-stay.netlify.app/floors/second';
+const airbnbUrl = 'https://www.airbnb.com/h/barnstay-suite';
 </script>
 
-<style scoped>
-.home {
-  padding: 40px 20px;
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
-}
-
-h1 {
-  color: #2c3e50;
-  margin-bottom: 30px;
-}
-
-.qr-container {
-  background: white;
-  padding: 30px;
-  border-radius: 12px;
-  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.1);
-}
-
-.description {
-  color: #666;
-  margin-bottom: 20px;
-  font-size: 1.1em;
-}
-
-.booking-section {
-  margin-top: 30px;
-  padding-top: 20px;
-  border-top: 1px solid #eee;
-}
-
-.airbnb-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 10px;
-  padding: 15px 30px;
-  background: #ff5a5f;
-  color: white;
-  text-decoration: none;
-  border-radius: 8px;
-  font-weight: 500;
-  transition: background-color 0.3s ease;
-}
-
-.airbnb-btn:hover {
-  background: #ff385e;
-}
-
-/* 모바일 반응형 */
-@media (max-width: 768px) {
-  .home {
-    padding: 20px;
-  }
-
-  .airbnb-btn {
-    width: 100%;
-    justify-content: center;
-  }
-}
-</style>
+<style scoped></style>

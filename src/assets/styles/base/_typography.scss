@@ -1,0 +1,16 @@
+@use 'sass:color' as color;
+@use '../abstracts/variables' as *;
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: $spacer;
+  font-weight: $font-weight-bold;
+  line-height: 1.2;
+}
+
+// 텍스트 유틸리티 클래스
+.text {
+  &-primary { color: $text-primary; }
+  &-secondary { color: $text-secondary; }
+  &-error { color: $danger; }
+  &-muted { color: $text-muted; }
+}

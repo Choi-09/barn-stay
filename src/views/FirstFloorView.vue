@@ -61,13 +61,4 @@ const floorData = ref({
 });
 </script>
 
-<style scoped>
-/* SecondFloorView와 동일한 스타일 사용 */
-.floor-view {
-  padding: 20px;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
-/* ... 나머지 스타일은 SecondFloorView와 동일 ... */
-</style>
+<style scoped></style>

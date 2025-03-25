@@ -1,0 +1,15 @@
+// Abstract
+@use '@/assets/styles/abstracts/mixins';
+@use '@/assets/styles/abstracts/variables';
+
+// Base
+@use '@/assets/styles/base/base';
+@use '@/assets/styles/base/fonts';
+@use '@/assets/styles/base/typography';
+@use '@/assets/styles/base/utilities';
+
+// Components
+@use '@/assets/styles/components/homeView';
+@use '@/assets/styles/components/floors';
+@use '@/assets/styles/components/gallery';
+

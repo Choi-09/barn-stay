@@ -1,0 +1,48 @@
+// base.scss
+@use 'sass:color' as color;
+@use 'sass:map';
+@use '../abstracts/variables' as *;
+@use '../abstracts/mixins' as *;
+
+// 앱 기본 레이아웃
+#app {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: map.get($spacers, 4);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  color: $text-primary;
+  background-color: var(--color-background);
+}
+
+// 기본 타이포그래피
+h1 {
+  font-size: $font-size-lg * 2.5;
+  font-weight: $font-weight-bold;
+  line-height: $line-height-base;
+  color: $text-title;
+}
+
+// 기본 링크 스타일
+a {
+  font-weight: $font-weight-medium;
+  color: $primary-bl;
+  transition: $transition-base;
+
+  &:hover {
+    color: color.scale($primary-bl, $lightness: -10%);
+  }
+}
+
+// 컨테이너 기본 레이아웃
+.container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 map.get($spacers, 3);
+
+  @include respond-to('sm') {
+    padding: 0 map.get($spacers, 2);
+  }
+}

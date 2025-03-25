@@ -1,0 +1,56 @@
+@use '../abstracts/variables' as *;
+
+// Fade 애니메이션
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+// Slide 애니메이션
+@keyframes slideInLeft {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideOutLeft {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+// 유틸리티 클래스
+.animate-fade-in {
+  animation: fadeIn $transition-base;
+}
+
+.animate-fade-out {
+  animation: fadeOut $transition-base;
+}
+
+.animate-slide-in {
+  animation: slideInLeft $transition-base;
+}
+
+.animate-slide-out {
+  animation: slideOutLeft $transition-base;
+}
