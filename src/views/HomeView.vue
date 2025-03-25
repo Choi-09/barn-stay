@@ -17,7 +17,7 @@
 import QRGenerator from '../components/QRGenerator.vue';
 
 // QR 코드가 가리킬 URL (2층 객실 페이지)
-const qrUrl = 'http://localhost:5173/floors/second'; // 실제 도메인으로 변경 필요
+const qrUrl = 'https://remarkable-jalebi-a34d83.netlify.app/floors/second'; // 실제 도메인으로 변경 필요
 const airbnbUrl = 'https://www.airbnb.com/h/barnstay-suite'; // 실제 Airbnb URL로 변경 필요
 </script>
 
