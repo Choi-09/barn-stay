@@ -96,6 +96,53 @@ h1 {
   background: #ff385e;
 }
 
+// 3층
+.special-features {
+  background: #fff3f3;
+  padding: 30px;
+  border-radius: 12px;
+  margin-top: 20px;
+}
+
+.special-features h2 {
+  color: #ff5a5f;
+  margin-bottom: 20px;
+}
+
+.special-features ul {
+  list-style: none;
+  padding: 0;
+}
+
+.special-features li {
+  padding: 10px 0;
+  color: #666;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.special-features li::before {
+  content: '★';
+  color: #ff5a5f;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .content {
+    margin-right: 0;
+    margin-bottom: 80px;
+  }
+
+  .image-slider {
+    grid-template-columns: 1fr;
+  }
+
+  .room-image {
+    height: 250px;
+  }
+}
+
 /* 모바일 반응형 */
 @media (max-width: 768px) {
   .content {
