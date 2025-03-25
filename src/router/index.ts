@@ -32,6 +32,10 @@ const router = createRouter({
       path: '/floors/exhibition',
       name: 'exhibition',
       component: ExhibitionView
+    },
+    {
+      path: '/:pathMatch(.*)*',
+      redirect: '/'
     }
   ]
 });

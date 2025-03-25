@@ -1,5 +1,5 @@
 <template>
-  <div class="qr-container">
+  <div>
     <qrcode-vue
       :value="value"
       :size="size"

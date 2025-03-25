@@ -1,13 +1,29 @@
-<!doctype html>
-<html lang="en">
-  <head>
+<!DOCTYPE html>
+<html lang="ko">
+<head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + Vue + TS</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
-  </body>
+    <meta name="description" content="Barnstay - 프리미엄 펜션" />
+    <title>Barnstay</title>
+    <!-- SPA 라우팅을 위한 메타 태그 추가 -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+</head>
+<body>
+<div id="app"></div>
+<script type="module" src="/src/main.ts"></script>
+<!-- SPA 라우팅을 위한 스크립트 추가 -->
+<script>
+    // SPA 라우팅을 위한 history API fallback
+    (function() {
+        var redirect = sessionStorage.redirect;
+        delete sessionStorage.redirect;
+        if (redirect && redirect != location.href) {
+            history.replaceState(null, null, redirect);
+        }
+    })();
+</script>
+</body>
 </html>
