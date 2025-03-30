@@ -25,17 +25,17 @@ const router = createRouter({
     //   component: MainView
     // },
     {
-      path: '/room-tour/second',
+      path: '/room/second',
       name: 'second-floor',
       component: SecondFloorView
     },
     {
-      path: '/room-tour/first',
+      path: '/room/first',
       name: 'first-floor',
       component: FirstFloorView
     },
     {
-      path: '/room-tour/third',
+      path: '/room/third',
       name: 'third-floor',
       component: ThirdFloorView
     },

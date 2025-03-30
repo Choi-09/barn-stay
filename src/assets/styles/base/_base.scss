@@ -26,11 +26,11 @@ h1 {
 // 기본 링크 스타일
 a {
   font-weight: $font-weight-medium;
-  color: $primary-bl;
+  color: $text-title;
   transition: $transition-base;
 
   &:hover {
-    color: color.scale($primary-bl, $lightness: -10%);
+    color: color.scale($text-secondary, $lightness: -10%);
   }
 }
 

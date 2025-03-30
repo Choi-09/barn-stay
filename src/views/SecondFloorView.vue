@@ -53,7 +53,7 @@ import router from '@/router/index.js';
         >MORE INFO</a
       >
 
-      <div class="text-item floor-nav" @click="router.push('/room-tour/third')">3F</div>
+      <div class="text-item floor-nav" @click="router.push('/room/third')">3F</div>
     </div>
   </div>
 </template>

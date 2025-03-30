@@ -17,7 +17,7 @@ const navigateTo = (path: string) => {
         <button class="nav-item shop" @click="navigateTo('/shop')">SHOP</button>
       </div>
       <div class="nav-row second">
-        <button class="nav-item room" @click="navigateTo('/room-tour/second')">ROOM</button>
+        <button class="nav-item room" @click="navigateTo('/room/second')">ROOM</button>
       </div>
     </nav>
   </div>
