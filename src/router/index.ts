@@ -1,30 +1,41 @@
 import { createRouter, createWebHistory } from 'vue-router';
-import HomeView from '@/views/HomeView.vue';
 import SecondFloorView from '@/views/SecondFloorView.vue';
 import FirstFloorView from '@/views/FirstFloorView.vue';
 import ThirdFloorView from '@/views/ThirdFloorView.vue';
 import GalleryView from '@/views/GalleryView.vue';
+import QRView from '@/views/QRView.vue';
+import MainView from '@/views/MainView.vue';
 
 const router = createRouter({
   history: createWebHistory(),
   routes: [
     {
       path: '/',
-      name: 'home',
-      component: HomeView
+      name: 'qr',
+      component: QRView
     },
     {
-      path: '/floors/second',
+      path: '/main',
+      name: 'main',
+      component: MainView
+    },
+    // {
+    //   path: '/room-tour',
+    //   name: 'main',
+    //   component: MainView
+    // },
+    {
+      path: '/room-tour/second',
       name: 'second-floor',
       component: SecondFloorView
     },
     {
-      path: '/floors/first',
+      path: '/room-tour/first',
       name: 'first-floor',
       component: FirstFloorView
     },
     {
-      path: '/floors/third',
+      path: '/room-tour/third',
       name: 'third-floor',
       component: ThirdFloorView
     },
@@ -35,7 +46,7 @@ const router = createRouter({
     },
     {
       path: '/:pathMatch(.*)*',
-      redirect: '/'
+      redirect: '/main'
     }
   ]
 });

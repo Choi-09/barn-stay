@@ -1,34 +1,13 @@
 // 프리텐다드 (한글)
 @font-face {
-  font-family: 'Pretendard';
-  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+  font-family: 'Acumin Variable Concept';
+  src: url('@/assets/fonts/AcuminVariableConcept-Regular.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
 }
 
-@font-face {
-  font-family: 'Pretendard';
-  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Medium.woff') format('woff');
-  font-weight: 500;
-  font-style: normal;
-}
-
-@font-face {
-  font-family: 'Pretendard';
-  src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Bold.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
-}
-
-// Inter (영문)
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
-
-// 나눔고딕 (한글 대체 폰트)
-@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
-
 // 전역 폰트 패밀리 변수 설정
 :root {
-  --font-primary: 'Pretendard', 'Inter', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
-  --font-secondary: 'Nanum Gothic', sans-serif;
+  --font-primary: 'Acumin Variable Concept', -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
+  --font-secondary: Arial, sans-serif;
 }
-

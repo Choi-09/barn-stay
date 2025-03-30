@@ -9,7 +9,10 @@
 @use '@/assets/styles/base/utilities';
 
 // Components
-@use '@/assets/styles/components/homeView';
 @use '@/assets/styles/components/floors';
 @use '@/assets/styles/components/gallery';
 
+// Views
+@use '@/assets/styles/components/qrView';
+@use '@/assets/styles/components/mainView';
+@use '@/assets/styles/components/second-floor';
