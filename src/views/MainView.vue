@@ -1,10 +1,24 @@
 <script setup lang="ts">
 import { useRouter } from 'vue-router';
+import { onMounted } from 'vue';
+
 const router = useRouter();
 
+const images = ['@/assets/images/barn-logo-thick-black.png', '@/assets/images/kyoja.png'];
+
+const preloadImages = () => {
+  images.forEach(src => {
+    const img = new Image();
+    img.src = src;
+  });
+};
 const navigateTo = (path: string) => {
   router.push(path);
 };
+
+onMounted(() => {
+  preloadImages();
+});
 </script>
 
 <template>
