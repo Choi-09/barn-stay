@@ -1,5 +1,30 @@
 <script setup lang="ts">
 import router from '@/router/index.js';
+import { onMounted } from 'vue';
+
+const preloadImages = () => {
+  const images = [
+    '@/assets/images/second-floor/203.png',
+    '@/assets/images/second-floor/205.png',
+    '@/assets/images/second-floor/204.png',
+    '@/assets/images/second-floor/208.png',
+    '@/assets/images/second-floor/210.png',
+    '@/assets/images/second-floor/206.png',
+    '@/assets/images/second-floor/209.png',
+    '@/assets/images/second-floor/207.png',
+    '@/assets/images/second-floor/201.png',
+    '@/assets/images/second-floor/202.png'
+  ];
+
+  images.forEach(src => {
+    const img = new Image();
+    img.src = src;
+  });
+};
+
+onMounted(() => {
+  preloadImages();
+});
 </script>
 
 <template>
