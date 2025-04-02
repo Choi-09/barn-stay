@@ -1,11 +1,9 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import TransitionWrapper from '@/components/TransitionWrapper.vue';
+</script>
 
 <template>
-  <div>
-    <nav></nav>
-    <!-- 라우터 뷰가 컴포넌트를 표시 -->
-    <router-view></router-view>
-  </div>
+  <TransitionWrapper />
 </template>
 
 <style scoped></style>
